@@ -3,9 +3,9 @@ import java.util.Scanner;
 		public static void main(String args[]){
 			Scanner scan = new Scanner(System.in);
 			final double PI = 3.14;
-			System.out.print("¹İÁö¸§ : ");
+			System.out.print("ë°˜ì§€ë¦„: ");
 			int r = scan.nextInt();
 			double cir = r*r*PI;
-			System.out.print("¹İÁö¸§ÀÌ"+ r +"ÀÎ ¼ö¹Ú ´Ü¸éÀÇ † ÀÌ: "+cir);
+			System.out.print("ë°˜ì§€ë¦„ì´"+ r +"ì¸ ìˆ˜ë°• ë‹¨ë©´ì˜ ë„—ì´: "+cir);
 		}
 }
