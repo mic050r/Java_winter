@@ -17,9 +17,10 @@ public class RaceHorseFrame extends JFrame {
 	HorseThread[] hts = new HorseThread[horses.length];
 	int winnerIndex[] = new int[horses.length];
 	int index;
-	String comboStr[] = { "1번: Jerry", "2번: Turtle", "3번: Deer ", "4번: Wolf", "5번: Yellow bird" };
+	String comboStr[] = { "1번: 귀염둥이 제리", "2번: 잠좀자자 자라", "3번: 맛있는 사슴 ", "4번: 꼬끼욧 늑대", "5번: 노랑노랑 새" };
 	JComboBox<String> combo = new JComboBox<String>(comboStr);
 	int betingIndex;
+	BetingPerson bet1, bet2;
 
 	public RaceHorseFrame() {
 		JPanel pan = new JPanel(null);
@@ -33,12 +34,15 @@ public class RaceHorseFrame extends JFrame {
 
 		JPanel panN = new JPanel();
 
-		JButton btnBeting = new JButton("게임배팅");
+		JButton btnBeting1 = new JButton("게임배팅1");
+		JButton btnBeting2 = new JButton("게임배팅2");
 		JButton btnStart = new JButton("게임시작");
-		btnBeting.addActionListener(btnL);
+		btnBeting1.addActionListener(btnL);
+		btnBeting2.addActionListener(btnL);
 		btnStart.addActionListener(btnL);
 		panN.add(combo);
-		panN.add(btnBeting);
+		panN.add(btnBeting1);
+		panN.add(btnBeting2);
 		panN.add(btnStart);
 
 		for (int i = 0; i < horses.length; i++) {
@@ -52,6 +56,7 @@ public class RaceHorseFrame extends JFrame {
 		add(pan, "Center");
 		add(panN, "North");
 		setTitle("경주마 게임");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setBounds(400, 100, 610, 520); // x, y, width, height
 		setVisible(true);
 		setResizable(false);
@@ -73,8 +78,17 @@ public class RaceHorseFrame extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			switch (e.getActionCommand()) {
-			case "게임배팅": // 게임베팅을 클릭했을 시
-				betingIndex = combo.getSelectedIndex();
+			case "게임배팅1":
+				bet1 = new BetingPerson();
+				bet1.setOrderNum(1);
+				bet1.setName(JOptionPane.showInputDialog("배팅하는 사람의 이름을 입력하세요"));
+				bet1.setBetingIndex(combo.getSelectedIndex());
+				break;
+			case "게임배팅2":
+				bet2 = new BetingPerson();
+				bet2.setOrderNum(2);
+				bet2.setName(JOptionPane.showInputDialog("배팅하는 사람의 이름을 입력하세요"));
+				bet2.setBetingIndex(combo.getSelectedIndex());
 				break;
 			case "게임시작": // 게임시작을 클릭했을 시
 				for (int i = 0; i < horses.length; i++) {
@@ -104,16 +118,21 @@ public class RaceHorseFrame extends JFrame {
 			while (true) {
 				lblHorse.setLocation(lblHorse.getX() + 5, lblHorse.getY());
 				if (lblHorse.getX() == 540) {
-					lblHorse.setIcon(new ImageIcon("imgs/" + stopImageName + ".png"));
-					winnerIndex[index++] = horseIndex; //제일 먼저 도착한 말이 index[0]에 들어감 -> 우승한 말의 값은 index[0]에 들어가 있음
-					if (index == horses.length - 1) { //말 5마리 -> 0 1 2 3 4 
-						JOptionPane.showMessageDialog(RaceHorseFrame.this, (winnerIndex[0] + 1) + "번째 말이 우승!!!");
-						if (winnerIndex[0] == betingIndex) // 이긴말과 내가 고른 말이 번호가 같다면 배팅 성공
-							JOptionPane.showMessageDialog(RaceHorseFrame.this, "축하합니다. 배팅에 성공하였습니다.");
+					lblHorse.setIcon(new ImageIcon("images/" + stopImageName + ".gif"));
+					winnerIndex[index++] = horseIndex;
+					if (index == horses.length - 1) {
+						JOptionPane.showMessageDialog(RaceHorseFrame.this, (winnerIndex[0] + 1) + "번째 말 우승!!!");
+						if (winnerIndex[0] == bet1.getBetingIndex())
+							JOptionPane.showMessageDialog(RaceHorseFrame.this,
+									"축하합니다. " + bet1.getName() + "님 배팅에 성공하였습니다.");
+						else if (winnerIndex[0] == bet2.getBetingIndex())
+							JOptionPane.showMessageDialog(RaceHorseFrame.this,
+									"축하합니다. " + bet2.getName() + "님 배팅에 성공하였습니다.");
 						else
-							JOptionPane.showMessageDialog(RaceHorseFrame.this, "다음에 다시 배팅 부탁드려요~. 배팅에 실패하였습니다.");
-						index = 0; //게임 초기화 시키는 부분
+							JOptionPane.showMessageDialog(RaceHorseFrame.this, bet1.getName() + "님, " + bet2.getName() + "님 모두 배팅에 실패하였습니다. 다시 도전하실래요?");
+						index = 0;
 						for (int i = 0; i < horses.length; i++) {
+//							System.out.println(winnerIndex[i]);
 							horses[i].setLocation(0, horses[i].getY());
 							horses[i].setIcon(new ImageIcon("imgs/horse" + (i + 1) + ".gif"));
 						}
@@ -123,7 +142,7 @@ public class RaceHorseFrame extends JFrame {
 				}
 				try {
 					Random random = new Random();
-					randomValue = random.nextInt(10); //0~9 사이의 값
+					randomValue = random.nextInt(10); // 0~9 사이의 값
 					sleep(10 * randomValue);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
