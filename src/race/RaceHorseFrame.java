@@ -124,10 +124,10 @@ public class RaceHorseFrame extends JFrame {
 						JOptionPane.showMessageDialog(RaceHorseFrame.this, (winnerIndex[0] + 1) + "번째 말 우승!!!");
 						if (winnerIndex[0] == bet1.getBetingIndex())
 							JOptionPane.showMessageDialog(RaceHorseFrame.this,
-									"축하합니다. " + bet1.getName() + "님 배팅에 성공하였습니다.");
+									"축하합니다. " + bet1.getName() + "님 배팅에 성공하였습니다!!");
 						else if (winnerIndex[0] == bet2.getBetingIndex())
 							JOptionPane.showMessageDialog(RaceHorseFrame.this,
-									"축하합니다. " + bet2.getName() + "님 배팅에 성공하였습니다.");
+									"축하합니다. " + bet2.getName() + "님 배팅에 성공하였습니다!!");
 						else
 							JOptionPane.showMessageDialog(RaceHorseFrame.this, bet1.getName() + "님, " + bet2.getName() + "님 모두 배팅에 실패하였습니다. 다시 도전하실래요?");
 						index = 0;
