@@ -37,22 +37,25 @@ Event Programming EventListener : 이미지나 버튼을 변화시키는 것
 →여러 책의 정보들 
 
 → ArrayList(BookVO객체들) / 저장 반환 
+
 →BookDAO isbn(도서번호), bookName(책이름), author(저자명), publish(출판사), price(가격), category(카테고리) → 6개 필드
 
 **출력 : 저장된 도서 정보들을 콘솔창에 출력**
 
 
-### javax.swing.JTable
+## javax.swing.JTable
 - 행, 열로 data를 출력하는 컴포넌트
 
-### jvax.swing.JTextField
+## jvax.swing.JTextField
 - 값 입력 컴포넌트
 
-### javax.swing.JCombobox
+## javax.swing.JCombobox
 - 콤보박스 컴포넌트
 
 GridLayout(표 같은 느낌)(4, 4) (행, 열)
+
 Empty String : “ “ 빈 문자열
+
 JPanel를 이용하여 추가
 
 -GridLayout
@@ -63,8 +66,8 @@ JPanel를 이용하여 추가
 |도서가격 :|TextField  |카테고리 : |Combobox|
 |EmptyString|        |  	|도서추가|
 
-JFrame : BorderLayout (다섯개의 구역)
+## JFrame : BorderLayout (다섯개의 구역)
 - 창역할
 - 그 안에 넣는 작은 역할이 JPanel
 
-JPanel : FlowLayout(자연스럽게, 저절로 flow)
+## JPanel : FlowLayout(자연스럽게, 저절로 flow)
