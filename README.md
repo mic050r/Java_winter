@@ -1,6 +1,5 @@
 # Event Programming EventListener
-Event Programming EventListener
-- 이미지나 버튼을 변화시키는 것
+Event Programming EventListener : 이미지나 버튼을 변화시키는 것
 
 ### 1번째 방법
 - JFrame 클래스(현재 클래스)에 EventHandler 클래스
@@ -34,10 +33,11 @@ Event Programming EventListener
 	- Controller(BookController)
 	- 
 **입력 (콘솔) : 도서정보 (BookVO)**
+
 →여러 책의 정보들 
 
-→ ArrayList(BookVO객체들) / 저장 반환 →BookDAO
-isbn(도서번호), bookName(책이름), author(저자명), publish(출판사), price(가격), category(카테고리) → 6개 필드
+→ ArrayList(BookVO객체들) / 저장 반환 
+→BookDAO isbn(도서번호), bookName(책이름), author(저자명), publish(출판사), price(가격), category(카테고리) → 6개 필드
 
 **출력 : 저장된 도서 정보들을 콘솔창에 출력**
 
