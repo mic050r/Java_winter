@@ -23,6 +23,7 @@ Event Programming EventListener
 	- 3개의 참조값 전달(버튼많아지면 배열로 만들어주기 리스너객체에 전달 )
 	- 독립된 클래스 만들기 (객체 생성해서 addActionListener로 연결)
 
+
 # < 도서 정보 관리 시스템 >
 #### MVC 모델링
 - M
@@ -34,18 +35,20 @@ Event Programming EventListener
 	- 
 **입력 (콘솔) : 도서정보 (BookVO)**
 →여러 책의 정보들 
+
 → ArrayList(BookVO객체들) / 저장 반환 →BookDAO
 isbn(도서번호), bookName(책이름), author(저자명), publish(출판사), price(가격), category(카테고리) → 6개 필드
 
 **출력 : 저장된 도서 정보들을 콘솔창에 출력**
 
-**javax.swing.JTable**
+
+### javax.swing.JTable
 - 행, 열로 data를 출력하는 컴포넌트
 
-**javax.swing.JTextField**
+### jvax.swing.JTextField
 - 값 입력 컴포넌트
 
-**javax.swing.JCombobox**
+### javax.swing.JCombobox
 - 콤보박스 컴포넌트
 
 GridLayout(표 같은 느낌)(4, 4) (행, 열)
@@ -55,10 +58,11 @@ JPanel를 이용하여 추가
 -GridLayout
 |GridLayout| | | | 
 |---|---|---|---|
-|도서번호 :	|TextField	|도서명 :	|TextField|
-|출판사 :	|TextField	|저자명 :	|TextField|
-|도서가격 :	|TextField	|카테고리 :	|Combobox|
-|EmptyString| | |도서추가|
+|도서번호 :|TextField  |도서명 : |TextField|
+|출판사 :|TextField  |저자명 : |TextField|
+|도서가격 :|TextField  |카테고리 : |Combobox|
+|EmptyString|        |  	|도서추가|
+
 JFrame : BorderLayout (다섯개의 구역)
 - 창역할
 - 그 안에 넣는 작은 역할이 JPanel
