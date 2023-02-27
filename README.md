@@ -18,5 +18,7 @@
 |말 선택|플레이어1 이름 입력|플레이어2 이름 입력|
 |---|---|---|
 |<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F84v2o%2FbtrVpf2ieow%2FdVCgshWACMvCgk1WtT0PPk%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcst0J5%2FbtrVpEt0Am7%2FXzAeqxG9xpEoikrSaIwTYk%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlWA4d%2FbtrVpuyboir%2FWJNBAeMNZJvK1BUaFyiFY0%2Fimg.png">|
+
 |경기중|우승말|성공|
+|---|---|---|
 |<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbSVIkc%2FbtrVpfutLl4%2Fn4tQX5Gt55ZiVxrf5QYYU0%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcs2wbL%2FbtrVpvRqLAl%2FhWzcV0ACQboFRhfeba2KM1%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FWZ1sx%2FbtrVmgOlSyJ%2FaER4rSfwYloWctP3uOSJ1K%2Fimg.png">|
