@@ -20,6 +20,7 @@ Format의 하위메뉴 : 글꼴색
 
 나머지는 다 JMenuItem
 
+## <실행화면>
 |처음화면|내용입력|폰트바꾸기|
 |---|---|---|
 |<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXhmw0%2FbtrWUHJLQON%2FrEznIb4gTy5ePIqknLInJK%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyGWjl%2FbtrWQ38zZ0T%2FIfLjhVxkMLeOr5M90uZ2A0%2Fimg.png">|<img src = "https://blog.kakaocdn.net/dn/dr9cn2/btrWYM4BGTF/QGYzQk67qipcL3wr7peS6k/img.png">|
