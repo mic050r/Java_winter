@@ -11,7 +11,7 @@
 |<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcx1uQt%2FbtrVhSyVsAt%2FwXYVJXEIJtcgJWh79fuls0%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSN2Lk%2FbtrVh5Zh6zY%2FiHcQ2FA2SR5OUBGL4ZrMkK%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbFlFDJ%2FbtrVec6bU7V%2FvICQKK7E12ZuKt78g0i2Zk%2Fimg.png">|
 
 
-<음료 자판기 개선>
+# <음료 자판기 개선>
 - 선택한 라벨에 배경색 변경
 - 제품이 나온후에는 배경이 흰색
 - 제품이 나올때 제품 사진이 보이게
