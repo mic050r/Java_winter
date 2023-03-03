@@ -1,5 +1,4 @@
-#< 성적프로그램 >
-
+# < 성적프로그램 >
 조건
 - Swing패키지의 컨테인와 컴포넌트를 사용
 - 한 학생에 대한 학생 정보 및 성적 정보 → 학번, 성명, 학년, 반, 국어, 영어, 수학, 과학, 총점, 평균
@@ -16,7 +15,8 @@
 |---|---|
 |<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbnBnS9%2FbtrUXox0jj5%2FcSlKpQTpDaRkxWc9jcn2F0%2Fimg.png">|<img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb69XwW%2FbtrUVkplAqG%2FYxSRtmoDOktVdf0IapasuK%2Fimg.png">|
 
-#<체질량지수(BMI)>
+
+# <체질량지수(BMI)>
 - bmi(kg/m^) = 체중 / (키/100)^
 - String.format(”%.2f”, bmi)
 - 키, 체중, bmi
